@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Stopwatch</title>
+</head>
+<body>
+  <header>
+    <h1>Awesome Stopwatch</h1>
+    <p>Your Perfect Timing Companion</p>
+    <button id="themeToggle" onclick="toggleTheme()">🌞</button>
+  </header>
+  <div class="stopwatch-container">
+    <div id="display" class="stopwatch-display">00:00:00:000</div>
+    <button id="startBtn" onclick="startStopwatch()">▶️</button>
+    <button id="stopBtn" onclick="stopStopwatch()">⏸️</button>
+    <button id="resetBtn" onclick="resetStopwatch()">🔄</button>
+    <button id="lapBtn" onclick="recordLap()">👟 Lap</button>
+    <ul id="lapList" class="lap-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
